@@ -1,42 +1,54 @@
-## Tarcizio Barbosa
+## Hi, I'm Tarcizio Barbosa
 
 ### About Me
 
 ```typescript
-interface BioProperties {
+interface IAboutInfos {
+  name: string;
   someDescription: string;
   currentWorking: string;
-  currentLearning: Array<string>;
-  reachme: object;
+  askmeAbout: string[];
+  funFact: string;
 }
 
-const tarcizioBarbosa: BioProperties = {
-  someDescription: `🕺 Graduated from a year in production engineering, 
-  I saw in the program an opportunity to solve the routine problems within my area of expertise. 
-  I currentlyconsider myself a beginner developer.`,
-  currentWorking: '✔ Quality Control Assistant',
-  currentLearning: [
-    'JavaScript',
-    'TypeScript',
-    'NodeJS',
-    'TypeORM',
-    'Python',
-    'Power BI',
-  ],
-  reachme: {
-    Linkedin: '🎈 www.linkedin.com/in/tarcizio-barbosa-552b2a208',
-    Twitter: '💙 @t_tarcizio',
-    Github: 'github.com/tarcizio-barbosa',
-  },
-};
+class TarcizioRepository implements ITarcizioRepository {
+  someInfosAboutMe = [];
 
-function getBio(properties: BioProperties) {
-  return properties;
+  async create({
+    name = "Tarcizio",
+    someDescription = "Graduated in Production Engineering. I saw in the program an opportunity to solve the problems",
+    currentWorking = 'Quality Control Assistant at Dislog',
+    askmeAbout = ['TypeScript', 'NodeJS', 'PrismaJS', 'NextJS'],
+    funFact = 'World of Warcraft player and lover of stars, planets and galaxies',
+  }: IAboutInfos): Promise<void> {
+    const tarcizioAlreadyExists = this.someInfosAboutMe.find(
+      (value) => value.name === name
+    );
+
+    if (tarcizioAlreadyExists) {
+      throw new Erro("This is impossible! 🙀");
+    }
+
+    const tarcizio = new TarcizioModel();
+
+    Object.assign(tarcizio, {
+      name,
+      someDescription,
+      currentWorking,
+      askmeAbout,
+      funFact,
+    });
+
+    this.someInfosAboutMe.push(tarcizio);
+
+    return tarcizio;
+  }
 }
 
-getBio(tarcizioBarbosa);
+export { TarcizioRepository };
+
 ```
 
 ## Leave a ✨ if you want to modify this README.
 
-Last Edited On: 23/03/2021
+Last Edited On: 26/10/2021
