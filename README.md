@@ -40,8 +40,6 @@ class TarcizioRepository implements ITarcizioRepository {
     });
 
     this.someInfosAboutMe.push(tarcizio);
-
-    return tarcizio;
   }
 }
 
