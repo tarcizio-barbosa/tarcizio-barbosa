@@ -48,7 +48,7 @@ export { TarcizioRepository };
 ```
 
 ## Leave a ✨ if you want to modify this README and reach me on social media below.
-[![LinkedIn](https://img.shields.io/badge/LinkeIn-tarcizio--barbosa-informational)](https://www.linkedin.com/in/tarcizio-barbosa/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-tarcizio--barbosa-informational)](https://www.linkedin.com/in/tarcizio-barbosa/)
 [![Twitter](https://img.shields.io/badge/Twitter-%40t__tarcizio-blue)](https://twitter.com/t_tarcizio)
 
 Last Edited On: 26/10/2021
