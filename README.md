@@ -1,6 +1,4 @@
-![some-gif](https://wmunpogjgutrfetkhfql.supabase.in/storage/v1/object/public/candidate-pictures/my-images/giphy2.gif)![some-gif](https://wmunpogjgutrfetkhfql.supabase.in/storage/v1/object/public/candidate-pictures/my-images/giphy2.gif)
-
-### Hi, I'm Tarcizio
+### Hi, I'm Tarcizio ![some-gif](https://media.giphy.com/media/uB6eLycBCOl68/giphy.gif)
 
 ```typescript
 interface IAboutInfos {
@@ -51,4 +49,4 @@ export { TarcizioRepository };
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tarcizio--barbosa-informational)](https://www.linkedin.com/in/tarcizio-barbosa/)
 [![Twitter](https://img.shields.io/badge/Twitter-%40t__tarcizio-blue)](https://twitter.com/t_tarcizio)
 
-Last Edited On: 26/10/2021
+Last Edited On: 19/11/2021
